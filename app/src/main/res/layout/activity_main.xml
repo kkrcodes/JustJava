@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_text"
+            android:layout_marginRight="@dimen/margin_text"
+            android:layout_marginTop="@dimen/margin_text"
+            android:hint="@string/name"
+            android:inputType="textCapWords"
+            android:autofillHints="AUTOFILL_NAME"
+            tools:targetApi="O"/>
+
+        <TextView
+            android:id="@+id/text_toppings"
+            style="@style/HeaderTextStyle"
+            android:text="@string/toppings"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_whipped_cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_text"
+            android:layout_marginStart="@dimen/margin_text"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:paddingRight="@dimen/checkbox_padding"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_chocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_text"
+            android:layout_marginStart="@dimen/margin_text"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:paddingRight="@dimen/checkbox_padding"
+            android:text="@string/chocolate"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/text_quantity"
+            style="@style/HeaderTextStyle"
+            android:text="@string/quantity"/>
+
+        <LinearLayout
+            android:id="@+id/layout_quantity_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_minus"
+                android:layout_width="@dimen/button_width_quantity"
+                android:layout_height="@dimen/button_height_quantity"
+                android:layout_marginStart="@dimen/margin_text"
+                android:layout_marginLeft="@dimen/margin_text"
+                android:onClick="buttonClick"
+                android:text="@string/minus"/>
+
+            <TextView
+                android:id="@+id/text_quantity_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_quantity"
+                android:layout_marginRight="@dimen/margin_quantity"
+                android:text="@string/initial_quantity_value"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/button_plus"
+                android:layout_width="@dimen/button_width_quantity"
+                android:layout_height="@dimen/button_height_quantity"
+                android:onClick="buttonClick"
+                android:text="@string/plus"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_text"
+            android:onClick="buttonClick"
+            android:text="@string/order"/>
+    </LinearLayout>
+
+</ScrollView>

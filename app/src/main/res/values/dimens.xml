@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="checkbox_padding">24dp </dimen>
+    <dimen name="margin_text">16dp</dimen>
+    <dimen name="margin_quantity">8dp</dimen>
+    <dimen name="button_width_quantity">48dp</dimen>
+    <dimen name="button_height_quantity">48dp</dimen>
+</resources>
